@@ -128,12 +128,12 @@ include:
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
 header_pages:
-  - /_pages/index.html
-  - /_pages/about.html
-  - /_pages/team.html
-  - /_pages/publications.html
-  - /_pages/news.html
-  - /_pages/contact.html
+  - index.html
+  - about.html
+  - team.html
+  - publications.html
+  - news.html
+  - contact.html
 
 # Page default value
 # defaults:
