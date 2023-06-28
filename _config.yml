@@ -132,13 +132,6 @@ header_pages:
   - de/news.html
   - de/contact.html
 
-defaults:
-  - scope:
-      path: "de/"
-      type: "pages"
-    values:
-      layout: "home"
-
 # Page default value
 # defaults:
 #   home:
