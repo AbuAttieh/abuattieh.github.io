@@ -132,6 +132,14 @@ header_pages:
   - de/news.html
   - de/contact.html
 
+header_pages_eng:
+  - eng/index.html
+  - eng/about.html
+  - eng/team.html
+  - eng/publications.html
+  - eng/news.html
+  - eng/contact.html
+
 # Page default value
 # defaults:
 #   home:

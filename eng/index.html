@@ -1,0 +1,82 @@
+---
+layout: home_eng
+title: Home
+banner: "/assets/images/banners/home.jpeg"
+---
+<style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    td {
+        padding: 10px;
+        border: none;
+        outline: none;
+    }
+
+    td.visible {
+        visibility: visible;
+    }
+
+    td.logo {
+        width: 50%;
+    }
+
+    td.text {
+        width: 50%;
+    }
+
+    .text {
+        font-size: 18px;
+    }
+
+    .custom-hr {
+        height: 3px;
+        background-image: linear-gradient(to right, transparent, grey, transparent);
+        border: none;
+        margin: 20px 0;
+    }
+
+    @media only screen and (max-width: 767px) {
+        td {
+            display: block;
+            width: 100%;
+            border: none;
+        }
+        
+        td.logo {
+            width: 100%;
+        }
+        
+        td.text {
+            width: 100%;
+        }
+    }
+
+</style>
+
+<table>
+    <tr>
+        <td class="visible logo" style="border: none;">
+            <img src="/assets/images/PrivateAIM_logo.png" alt="Logo" >
+        </td>
+        <td class="visible text" style="border: none;">
+            <p>
+                Ziel des Projekts „Privacy-Preserving Analytics in Medicine“ (PrivateAIM) ist es, 
+                eine föderierte Plattform für datenschutzgerechtes maschinelles Lernen und 
+                Datenanalytik für die Medizininformatik-Initiative (MII) zu entwickeln.
+                Dafür werden maßgeschneiderte KI-Methoden, Föderationsmechanismen und Schutzmodelle entwickelt,
+                die die Identitäten und sensiblen Gesundheitsinformationen der Patientinnen und Patienten schützen.
+            </p>
+            <br>
+            <button style="font-size: 22px; padding: 10px 20px; background-color: #7dc051; color: white; border: none; cursor: pointer;" onclick="window.location.href='about.html'">Erfahren Sie mehr über PrivateAIM &rarr;</button>
+        </td>
+    </tr>
+</table>
+
+<hr class="custom-hr">
+
+<p class="text">Eine Übersicht über weitere Use Cases und Projekt der MII finden Sie auf der&nbsp;<a href="https://www.medizininformatik-initiative.de/de/use-cases-und-projekte">MII-Webseite.</a></p>
+
+

@@ -16,7 +16,7 @@
     <div class="site-header-inner">
 
       {%- assign default_paths = site.pages | where: "dir", "/" | map: "path" -%}
-      {%- assign page_paths = site.header_pages | default: default_paths -%}
+      {%- assign page_paths = site.header_pages_eng | default: default_paths -%}
 
       <span class="site-brand">
         {%- include views/site-brand.html -%}
@@ -96,9 +96,17 @@
   document.addEventListener('DOMContentLoaded', initHeader);
 
   function changeLanguage() {
-    var currentUrl = window.location.href;
+  var currentUrl = window.location.href;
+
+  // Überprüfen, ob "/eng/index.html" in der URL vorkommt
+  if (currentUrl.includes("/eng/index.html")) {
+    var newUrl = currentUrl.replace("/eng/index.html", "");
+    window.location.href = newUrl;
+  } else {
+    // Wenn "/eng/index.html" nicht gefunden wird, wird "/eng/" zu "/de/" ersetzt
     var newUrl = currentUrl.replace("/eng/", "/de/");
     window.location.href = newUrl;
   }
+}
 
 </script>
