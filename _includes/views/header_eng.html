@@ -11,6 +11,10 @@
 {%- endif -%}
 
 <style>
+  .site-header-inner {
+    position: relative;
+  }
+
   #language-toggle {
     border: none;
     background: url("../../assets/images/flag_de.png") no-repeat center center;
@@ -19,6 +23,23 @@
     height: 20px; /* Höhe des Buttons anpassen */
     padding: 0;
     cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  @media (max-width: 767px) {
+    .site-header-inner {
+      position: static;
+      text-align: center;
+    }
+
+    #language-toggle {
+      position: relative;
+      margin: 0 auto;
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 </style>
 
