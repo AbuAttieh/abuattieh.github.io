@@ -101,7 +101,7 @@
   // Überprüfen, ob "/de/" oder "/eng/" in der URL vorkommt
   if (currentUrl.indexOf("/de/") === -1 && currentUrl.indexOf("/eng/") === -1) {
     // Wenn weder "/de/" noch "/eng/" vorhanden sind, URL mit "/eng/index.html" ergänzen
-    var newUrl = currentUrl + "eng/index.html";
+    var newUrl = currentUrl + "eng/";
     window.location.href = newUrl;
   } else {
     // Andernfalls die Sprache in der URL ändern

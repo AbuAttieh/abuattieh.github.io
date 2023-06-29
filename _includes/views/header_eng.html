@@ -99,8 +99,8 @@
   var currentUrl = window.location.href;
 
   // Überprüfen, ob "/eng/index.html" in der URL vorkommt
-  if (currentUrl.includes("/eng/index.html")) {
-    var newUrl = currentUrl.replace("/eng/index.html", "");
+  if (currentUrl.includes("/eng/") && currentUrl.endsWith("/eng/")) {
+    var newUrl = currentUrl.replace("/eng/", "");
     window.location.href = newUrl;
   } else {
     // Wenn "/eng/index.html" nicht gefunden wird, wird "/eng/" zu "/de/" ersetzt
