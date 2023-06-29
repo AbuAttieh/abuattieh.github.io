@@ -10,6 +10,18 @@
   {%- assign header_transparent_class = "site-header-transparent" -%}
 {%- endif -%}
 
+<style>
+  #language-toggle {
+    border: none;
+    background: url("../../assets/images/flag_de.png") no-repeat center center;
+    background-size: contain;
+    width: 20px; /* Breite des Buttons anpassen */
+    height: 20px; /* Höhe des Buttons anpassen */
+    padding: 0;
+    cursor: pointer;
+  }
+</style>
+
 <header class="site-header {{ header_transparent_class }}" role="banner">
 
   <div class="wrapper">
@@ -40,7 +52,7 @@
               <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | upcase | escape }}</a>
               {%- endif -%}
             {%- endfor -%}
-            <button id="language-toggle" style="border: none; background-color: transparent; font-family: Helvetica;" onclick="changeLanguage()">De</button>
+            <button id="language-toggle" onclick="changeLanguage()"></button>
             {%- assign name = 'translate_langs' -%}
             {%- include functions.html func='get_value' -%}
             {%- assign translate_langs = return -%}
@@ -48,9 +60,6 @@
               {%- assign name = 'lang' -%}
               {%- include functions.html func='get_value' default='en' -%}
               {%- assign lang = return -%}
-              <span class="page-link">            
-                  {%- include extensions/google-translate.html -%}
-              </span>
             {%- endif -%}
           </div>
         </nav>
