@@ -40,7 +40,7 @@ author: AbuAttieh
 #   "Copyright (c) 2017-{currentYear} <a href="https://example.com">{author}</a>"
 #   "Copyright © 2017-2021 Foobar"
 #
-copyright: "PrivateAIM (cright) {currentYear}"
+copyright: "PrivateAIM © {currentYear}"
 
 description: Website of the PrivateAIM project.
 
